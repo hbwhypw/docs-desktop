@@ -18,15 +18,15 @@ helpviewer_keywords:
 
 # Binding declarations overview (WPF .NET)
 
-Typically, developers declare the bindings directly in the XAML markup of the UI elements they want to bind data to. However, you can also declare bindings in code. This article describes how to declare bindings in both XAML and in code.
+通常, 开发人员直接在要将数据绑定到的UI元素的XAML标记中声明绑定。不管怎样，您还可以在代码中声明绑定。本文描述了如何在XAML和代码中声明绑定。
 
-## Prerequisites
+## 预备知识
 
-Before reading this article, it's important that you're familiar with the concept and usage of markup extensions. For more information about markup extensions, see [Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
+在阅读本文之前，熟悉标记扩展的概念和用法非常重要。有关标记扩展的详细信息，请参见[Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
 
-This article doesn't cover data binding concepts. For a discussion of data binding concepts, see [Data binding overview](index.md#basic-data-binding-concepts).
+本文不涉及数据绑定概念。有关数据绑定概念的讨论，请参见[Data binding overview](index.md#basic-data-binding-concepts).
 
-## Declare a binding in XAML
+## 在XAML中声明绑定
 
 <xref:System.Windows.Data.Binding> is a markup extension. When you use the binding extension to declare a binding, the declaration consists of a series of clauses following the `Binding` keyword and separated by commas (,). The clauses in the binding declaration can be in any order and there are many possible combinations. The clauses are *Name*=*Value* pairs, where *Name* is the name of the <xref:System.Windows.Data.Binding> property and *Value* is the value you're setting for the property.
 
@@ -151,7 +151,7 @@ The default behavior is as follows if not specified in the declaration:
 
 - The default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value varies between <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged> and <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus> depending on the bound dependency property as well. The default value for most dependency properties is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, while the <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> property has a default value of <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>.
 
-## See also
+##  另请参见
 
 - [Data binding overview](index.md)
 - [Binding sources overview](binding-sources-overview.md)
